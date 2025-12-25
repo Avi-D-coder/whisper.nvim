@@ -68,4 +68,21 @@ M.download_model = function(model_name)
   end)
 end
 
+-- Lualine component
+M.lualine_component = function()
+  local state = require('speak-to.state')
+
+  if state.is_processing() then
+    return '🎤 Processing...'
+  elseif state.is_recording() then
+    if state.is_model_loaded() then
+      return '🎤 Recording'
+    else
+      return '🎤 Loading...'
+    end
+  else
+    return ''
+  end
+end
+
 return M
