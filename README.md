@@ -295,20 +295,6 @@ Models are stored in: `~/.local/share/nvim/whisper/models/`
 - **macOS**: Full support (ARM and Intel)
 - **Linux**: Full support (tested on Ubuntu, should work on other distributions)
 
-## Future Features
-
-### v0.2: LLM Integration
-- Local LLM via Ollama for command detection
-- Async diff-based editing
-- Natural language commands (e.g., "delete the last line", "fix indentation")
-- Smart text cleanup and formatting
-
-### v0.3+
-- OpenAI API-compatible endpoint support
-- WhisperX integration for better accuracy
-- Voice commands for navigation
-- Multi-step command chaining
-
 ## Requirements
 
 - Neovim >= 0.8.0
@@ -318,7 +304,7 @@ Models are stored in: `~/.local/share/nvim/whisper/models/`
 
 ## License
 
-MIT
+MIT + Apache-2.0 License
 
 ## Credits
 
